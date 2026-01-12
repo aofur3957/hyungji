@@ -1,0 +1,6 @@
+/* 텍스트 숨김 */
+.hidden {display: block; overflow: hidden; text-indent: -9999px;}
+
+/* 커스텀 스크롤 바 */
+body::-webkit-scrollbar {width: 7px;}
+body::-webkit-scrollbar-thumb {background: #999; border-radius: 10px 10px 10px 10px;}

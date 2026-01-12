@@ -1,0 +1,51 @@
+.header {position: fixed; top: 0; left: 0; width: 100%; height: 90px; background: #fff; z-index: 2000;}
+.header .inner {height: 100%; padding: 0 60px; display: flex; justify-content: space-between; align-items: center;}
+.header h1 img {width: auto; height: 42px;}
+.header .gnb {display: flex; height: 100%;}
+.header .gnb::after {content: ''; width: 100vw; height: 250px; background: #fff; position: absolute; inset: 0; top: -160px; z-index: -100; opacity: 0; transition: opacity 0.6s, top 0.5s;}
+.header:hover .gnb::after {top: 90px; opacity: 1;}
+.header .gnb > li > a {font-size: 18px; color: #333; font-weight: 600; display: block; height: 100%; line-height: 5; padding: 0 46px; cursor: pointer; transition: color 0.3s, padding 0.5s;}
+.header:hover .gnb > li > a {padding: 0 73px;}
+.header .gnb li a:hover {color: #EA5514;}
+.header .gnb li .depth2 {display: block; height: 250px; padding-top: 19px;}
+.header .gnb li .depth2 li a {display: block; font-size: 16px; padding: 13px 0; text-align: center; opacity: 0; transition: opacity 0.3s;}
+.header:hover .gnb li .depth2 li a {opacity: 1;}
+.header .utils {font-family: 'Poppins'; font-size: 14px; display: flex; align-items: center;}
+.header .utils .language-box {padding: 14px 22px; background: #EA5514; border-radius: 22px; cursor: pointer;}
+.header .utils .language-box .language {vertical-align: middle; color: #fff; font-weight: 500; padding-right: 15px;}
+.header .utils .language-box .btn_more {vertical-align: middle;}
+.header .utils .sns-box {height: 28px; width: 32px; margin-left: 36px; cursor: pointer;}
+.header .utils .sns-box svg {transition: all 0.3s;}
+.header .utils .sns-box:hover svg {fill: #EA5514;}
+.header .utils .hamburgur {width: 23px; height: 21px; position: relative; display: block; margin-left: 43px; cursor: pointer;}
+.header .utils .hamburgur:hover::before,
+.header .utils .hamburgur:hover::after,
+.header .utils .hamburgur:hover span {background: #EA5514;}
+.header .utils .hamburgur span, .header .utils .hamburgur::before, .header .utils .hamburgur::after {display: block; width: 100%; height: 3px; background: #000; border-radius: 50px; transition: all 0.3s;}
+.header .utils .hamburgur span {position: absolute; top: 50%; left: 0; margin-top: -1.5px;}
+.header .utils .hamburgur::before {content:''; position: absolute; top: 0;}
+.header .utils .hamburgur::after {content:''; position: absolute; top: 100%; margin-top: -3px;}
+
+.visual .visual-swiper {width: 100vw; height: 100vh; position: relative; overflow: hidden;}
+.visual .visual-swiper .swiper-slide {display: flex; justify-content: flex-end; align-items: center; position: relative;}
+.visual .visual-swiper .swiper-slide .bg {position: absolute; inset: 0; z-index: -10;} 
+.visual .visual-swiper .swiper-slide::after {content: ''; display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); position: absolute; inset: 0; z-index: -1;}
+.visual .visual-swiper .swiper-slide .txt-box {color: #fff; width: 50%; padding-left: 46px;}
+.visual .visual-swiper .swiper-slide .txt-box .tit {font-size: 100px; font-weight: 600; line-height: 0.75; padding-bottom: 0.68em;}
+.visual .visual-swiper .swiper-slide .txt-box .des {font-size: 40px; font-weight: 700; line-height: 0.75; padding-bottom: 1.075em;}
+.visual .visual-swiper .swiper-slide .txt-box .btn-more {background: #EA5514; border-radius: 24px; font-size: 16px; padding: 16px 69px 16px 24px; color: #fff; display: inline-block; position: relative; font-weight: 600;}
+.visual .visual-swiper .swiper-slide .txt-box .btn-more .ico-arrow {position: absolute; top: 50%; right: 24px; transform: translateY(-50%);}
+.visual .visual-swiper .progress-bar {position: absolute; top: 50%; left: 65px; transform: translateY(-50%); z-index: 100; text-align: center;}
+.visual .visual-swiper .progress-bar .c-page {font-family: 'Poppins'; color: #fff; font-size: 13px; font-weight: 700; display: block; text-align: center; margin-bottom: 16px; user-select: none;}
+.visual .visual-swiper .progress-bar .bar {display: inline-block; width: 2px; height: 100px; background: rgba(255, 255, 255, 0.3); margin-bottom: 9px; position: relative; font-size: 0;}
+.visual .visual-swiper .progress-bar .bar .inner {position: absolute; inset: 0; width: 100%; height: 100%; background: #fff; transform: scale(1, 0); transform-origin: top center;}
+.visual .visual-swiper .progress-bar .navi {margin-top: 7px;}
+.visual .visual-swiper .progress-bar .navi > div {height: 5px; opacity: 0.3; cursor: pointer; transition: all 0.3s;}
+.visual .visual-swiper .progress-bar .navi > div:hover {opacity: 1;}
+.visual .visual-swiper .progress-bar .navi .btn-prev {margin-bottom: 19px;}
+.visual .visual-swiper .progress-bar .btn-pause {display: block; margin: 0 auto; cursor: pointer;}
+.visual .visual-swiper .progress-bar .btn-play {display: none; margin: 0 auto; cursor: pointer;}
+
+.slogun {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.slogun .txt-box {font-size: 64px; font-weight: 700; color: #d9d9d9;}
+.slogun .txt-box > div {line-height: 1.421875;}

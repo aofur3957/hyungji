@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <title>형지엘리트</title>
+</head>
+<body>
+  <header class="header">
+    <div class="inner">
+      <h1>
+        <img src="assets/logo.svg" alt="">
+      </h1>
+      <ul class="gnb">
+        <li>
+          <a href="#">회사소개</a>
+          <ul class="depth2">
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">윤리경영</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">사업분야</a>
+          <ul class="depth2">
+            <li><a href="#">엘리트 학생복</a></li>
+            <li><a href="#">윌비 플레이</a></li>
+            <li><a href="#">윌비 워크웨어</a></li>
+            <li><a href="#">자회사</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">IR</a>
+          <ul class="depth2">
+            <li><a href="#">전자공고</a></li>
+            <li><a href="#">대차대조표</a></li>
+            <li><a href="#">손익계산서</a></li>
+            <li><a href="#">보도자료</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <ul class="depth2">
+            <li><a href="#">오시는 길</a></li>
+            <li><a href="#">고객문의</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="utils">
+        <button class="language-box">
+          <span class="language">KOR</span>
+          <svg class="btn_more" viewBox="0 0 448 512" width="14px" height="16px">
+            <path d="M241 369c-9.4 9.4-24.6 9.4-33.9 0L47 209c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l143 143L367 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L241 369z"
+            fill="#ffffff"></path>
+          </svg>
+        </button>
+        <button class="sns-box">
+          <svg viewBox="0 0 448 512" height="28px" width="28px">
+            <path d="M448 128c0 53-43 96-96 96c-28.9 0-54.8-12.8-72.4-33l-89.7 44.9c1.4 6.5 2.1 13.2 2.1 20.1s-.7 13.6-2.1 20.1L279.6 321c17.6-20.2 43.5-33 72.4-33c53 
+            0 96 43 96 96s-43 96-96 96s-96-43-96-96c0-6.9 .7-13.6 2.1-20.1L168.4 319c-17.6 20.2-43.5 33-72.4 33c-53 0-96-43-96-96s43-96 96-96c28.9 0 54.8 12.8 72.4 
+            33l89.7-44.9c-1.4-6.5-2.1-13.2-2.1-20.1c0-53 43-96 96-96s96 43 96 96zM96 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM400 128a48 48 0 1 0 -96 0 48 48 0 1 0 96 
+            0zM352 432a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"></path>
+          </svg>
+        </button>
+        <button class="hamburgur">
+          <span class="hidden">전체메뉴</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="visual">
+    <div class="visual-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swipe-slide01">
+          <img class="bg" src="assets/img_visual02.jpg" alt="">
+          <div class="txt-box">
+            <p class="des">진심을 전하는 기업</p>
+            <p class="tit">HYUNGJI ELITE</p>
+            <a href="#" class="btn-more">
+              View More
+              <svg class="ico-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide swipe-slide02">
+          <img class="bg" src="assets/img_visual01.jpg" alt="">
+          <div class="txt-box">
+            <p class="des">No 1. Life Style Creation Company</p>
+            <p class="tit">HYUNGJI ELITE</p>
+          </div>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <span class="c-page">01</span>
+        <div class="bar"><div class="inner"></div></div>
+        <svg class="btn-play" width="10px" height="14px" viewBox="0 0 384 512">
+          <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" 
+          fill="#ffffff"></path>
+        </svg>
+        <svg class="btn-pause" width="10px" height="14px" viewBox="0 0 46 67">
+          <path d="m11.5,4.19C11.5,1.87,8.94,0,5.75,0S0,1.87,0,4.19v58.62c0,2.32,2.56,4.19,5.75,4.19s5.75-1.87,5.75-4.19V4.19Zm34.5,0c0-2.32-2.56-4.19-5.75-4.19s-5.75,
+          1.87-5.75,4.19v58.62c0,2.32,2.56,4.19,5.75,4.19s5.75-1.87,5.75-4.19V4.19Z" fill="#ffffff"></path>
+        </svg>
+        <div class="navi">
+          <div class="btn-prev">
+            <svg viewBox="0 0 448 512" width="14px" height="16px">
+              <path d="M207 143c9.4-9.4 24.6-9.4 33.9 0L401 303c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-143-143L81 337c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L207 143z" 
+              fill="#ffffff"></path>
+            </svg>
+          </div>
+          <div class="btn-next">
+            <svg viewBox="0 0 448 512" width="14px" height="16px">
+              <path d="M241 369c-9.4 9.4-24.6 9.4-33.9 0L47 209c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l143 143L367 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L241 369z"
+              fill="#ffffff"></path>
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+     
+      
+    </div>
+  </section>
+  <section class="slogun">
+    <p class="txt-box">
+      혁신과 열정으로 글로벌 패션의<br> 
+      미래를 선도합니다.<br>
+      형지엘리트
+    </p>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+</html>
