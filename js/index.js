@@ -1,11 +1,28 @@
-gsap.registerPlugin(SplitText);
+gsap.registerPlugin(SplitText, ScrollTrigger);
 
 
 window.addEventListener('load', ()=>{
   /* 레니스 초기화 */
-  const lenis = new Lenis({
-    autoRaf: true,
-  });
+  const lenis = new Lenis();
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  gsap.ticker.add((time)=>{
+    lenis.raf(time * 1000);
+  })
+
+  gsap.ticker.lagSmoothing(0);
+
+  /* header */
+  !(function(){
+    window.addEventListener('wheel', (e)=>{
+      if(e.deltaY > 0){
+        gsap.to('.header', {transform: 'translateY(-100%)', duration: 0.3});
+      }else {
+        gsap.to('.header', {transform: 'translateY(0)', duration: 0.3});
+      }
+    })
+  })();
 
   /* visual */
   !(function(){
@@ -106,10 +123,44 @@ window.addEventListener('load', ()=>{
 
   /* slogun */
   !(function(){
-    const split = new SplitText('.slogun .txt-box', {type: 'lines'});
-    console.log(split);
+    const txtBox = document.querySelector('.slogun .txt-box');
+    const slogunSec = document.querySelector('.slogun');
+    const cloneEl = txtBox.cloneNode(true);
+    cloneEl.classList.add('clone');
+    slogunSec.appendChild(cloneEl);
+
+    const split = new SplitText('.slogun .clone', {type: 'lines'});
+
+    split.lines.map((line, idx)=>{
+      const spanEl = document.createElement('span');
+      spanEl.append(line.innerText);
+      line.replaceChildren(spanEl);
+    })
+
+
+    ScrollTrigger.create({
+      trigger: '.slogun',
+      start: 'top+=50px 50%',
+      end: 'bottom-=150px 50%',
+      markers: true,
+      scrub: true,
+      onUpdate: (st)=>{
+        const percentage = 1 / split.lines.length;
+        split.lines.forEach((line, idx)=>{
+          const startVal = percentage * idx;
+          const endVal = percentage * (idx + 1);
+          const changeBound = gsap.utils.mapRange(startVal, endVal, 100, 0);
+
+          [...line.children][0].style.setProperty('--size', `${changeBound(st.progress)}%`);
+        })
+        
+      }
+    })
+
+
   })();
 })
+
 
 
 

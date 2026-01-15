@@ -46,6 +46,9 @@
 .visual .visual-swiper .progress-bar .btn-pause {display: block; margin: 0 auto; cursor: pointer;}
 .visual .visual-swiper .progress-bar .btn-play {display: none; margin: 0 auto; cursor: pointer;}
 
-.slogun {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
-.slogun .txt-box {font-size: 64px; font-weight: 700; color: #d9d9d9;}
-.slogun .txt-box > div {line-height: 1.421875;}
+.slogun {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; position: relative;}
+.slogun .txt-box {font-size: 64px; font-weight: 700; color: #d9d9d9; line-height: 1.421875;}
+.slogun .txt-box.clone {position: absolute; color: #EA5514;}
+.slogun .txt-box.clone > div {line-height: 1.421875;}
+.slogun .txt-box.clone > div span {--size: 100%; clip-path: inset(0 var(--size) 0 0);}
+.business {width: 100vw; height: 100vh;}
