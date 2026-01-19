@@ -159,8 +159,51 @@ window.addEventListener('load', ()=>{
 
 
   })();
+
+  /* business */
+  !(function(){
+    const businessSwiper = new Swiper('.business-swiper', {
+      loop: true,
+      loopAdditionalSlides: 1,
+      speed: 1500,
+      spaceBetween: 60,
+    });
+
+    function navigationHandle(){
+      const btnPrev = document.querySelector('.business-swiper-btns .btn-prev');
+      const btnNext = document.querySelector('.business-swiper-btns .btn-next');
+
+      btnPrev.addEventListener('click', ()=>{
+        businessSwiper.slidePrev(1500);
+      })
+
+      btnNext.addEventListener('click', ()=>{
+        businessSwiper.slideNext(1500);
+      })
+    }
+    
+
+    function init(){
+      navigationHandle();
+    }
+
+    init();
+    
+  })();
+
+  /* worth */
+  !(function(){
+    ScrollTrigger.create({
+      trigger: '.worth .video',
+      start: 'top top',
+      end: '+=100%',
+      scrub: 1,
+      pin: true,
+      animation: gsap.to('.video-inner', {width: '100%', paddingTop: '100vh'}),
+      markers: true,
+    })
+  })();
+
 })
-
-
 
 

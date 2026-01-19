@@ -51,4 +51,45 @@
 .slogun .txt-box.clone {position: absolute; color: #EA5514;}
 .slogun .txt-box.clone > div {line-height: 1.421875;}
 .slogun .txt-box.clone > div span {--size: 100%; clip-path: inset(0 var(--size) 0 0);}
-.business {width: 100vw; height: 100vh;}
+
+.business {width: 100vw; }
+.business .inner {width: clamp(1204px ,68vw, 1600px); margin: 0 auto; position: relative;}
+.business .tit {font-size: 80px; font-weight: 700; font-family: 'Poppins'; text-transform: uppercase; margin-bottom: 0.4em; padding-top: 0.125em;}
+.business .business-swiper {margin-top: 100px; width: 100%;}
+.business .business-swiper .swiper-slide {display: flex; gap: 0 120px; align-items: center;} 
+.business-swiper .business-swiper-btns {font-size: 0; position: absolute; top: 0; right: 0; display: flex; gap: 0 12px;}
+.business-swiper .business-swiper-btns > div{display: inline-block; padding: 23px; border-radius: 50%; border: 1px solid #000; transition: all 0.3s; cursor: pointer;}
+.business-swiper .business-swiper-btns > div:hover {background: #000;}
+.business-swiper .business-swiper-btns svg {display: block; transition: all 0.3s;}
+.business-swiper .business-swiper-btns > div:hover svg {fill: #fff;}
+.business .pic-container {width: 35%; transition: width 1.2s;}
+.business .pic {width: 100%; padding-top: 128.3%; position: relative; transition: padding-top 1s, transform 1.3s, margin-top 1s;}
+.business .business-swiper .swiper-slide.swiper-slide-prev .pic-container {width: 30%;}
+.business .business-swiper .swiper-slide.swiper-slide-prev .pic {padding-top: 100%;  transform: translateX(158.333%); margin-top: 50%; opacity: 0.3;}
+.business .business-swiper .swiper-slide.swiper-slide-next .pic-container {width: 30%;}
+.business .business-swiper .swiper-slide.swiper-slide-next .pic {padding-top: 100%; margin-top: 50%; opacity: 0.3;}
+.business .pic img {position: absolute; top: 0; left: 0;}
+.business .sub-tit {font-size: 20px; font-weight: 700; line-height: 1.6;}
+.business .des {display: flex; width: 40%; flex-direction: column; justify-content: center; opacity: 1; padding: 3% 0;}
+.business .business-swiper .swiper-slide.swiper-slide-prev .des {opacity: 0; transition: opacity 0.3s;}
+.business .business-swiper .swiper-slide.swiper-slide-active .des {opacity: 1; transition: opacity 0.3s 0.7s;}
+.business .des .txt-box h3 {font-size: 20px; font-weight: 700; margin-top: 2.75em;}
+.business .des .txt-box strong {display: inline-block; font-size: 45px; font-weight: 700; line-height: 1.3; margin-top: 0.42em; margin-bottom: 0.51em;}
+.business .des .txt-box p {font-size: 16px; line-height: 1.6;}
+.business .des .business-logo01 {width: 111px; height: 54px;}
+.business .des .business-logo02 {width: 56px; height: 56px;}
+.business .des .business-logo03 {width: 194px; height: 45px;}
+.business .des .business-logo img {object-position: left top;}
+.business .des .tag-list {width: 61%; margin-top: 65px; font-size: 0; display: flex; gap: 16px 10px; flex-wrap: wrap;}
+.business .des .tag-list li {display: inline-block; font-size: 13px; font-weight: 600; color: #505050; background-color: #f6f6f6; padding: 14px 17px; border-radius: 20px;}
+
+.worth {padding-top: 360px; margin-top: 360px;}
+.worth .inner {width: clamp(1204px ,68vw, 1600px); margin: 0 auto;}
+.worth .tit {font-size: 80px; text-transform: uppercase; font-weight: 700; font-family: 'Poppins'; line-height: 1.2; margin-bottom: 0.5875em;}
+.worth .sub-tit {font-size: 26px; font-weight: 500; line-height: 1.5;}
+.worth .sub-tit .last-line {display: block; margin-top: 2.0769em; margin-bottom: 6em;}
+.worth .video {width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.worth .video .video-inner {width: 60%; height: 0; position: relative; padding-top: 33.7%;}
+.worth .video .youtube {width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: contain; pointer-events: none;}
+
+.next {width: 100vw; height: 100vh;}
